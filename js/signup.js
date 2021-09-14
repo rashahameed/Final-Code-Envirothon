@@ -1,8 +1,7 @@
 function signup(){
-  var name=document.getElementById("name").value;
-  var username=document.getElementById("username").value;
-  var pass=document.getElementById("pass").value;
-  firebase.auth().createUserWithEmailAndPassword(name, username, password)
+  var email=document.getElementById("email").value;
+  var pass=document.getElementById("password").value;
+  firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
     // Signed in 
     var user = userCredential.user;
