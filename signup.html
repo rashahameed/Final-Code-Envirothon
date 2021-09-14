@@ -19,7 +19,7 @@
 				<a class="active"><strong>Sign Up</strong></a>
 			</div>
 			<div id="signin">
-				<form action="/~/Envirothon/signup" method="POST" enctype="multipart/form-data">
+				<form action="" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="username">Username</label>
 						<input type="text" id="username" name="username" autofocus required>
@@ -35,7 +35,7 @@
 					</div>
 
 					<div class="form-group">
-						<label id="button">
+						<label id="button" onclick=login()>
 							<input type="submit" value="Create Account">
 						</label>
 					</div>
@@ -80,6 +80,7 @@
   			const app = initializeApp(firebaseConfig);
   			const analytics = getAnalytics(app);
 		</script>
+		<script src="js/signup.js">
 	</body>
 
 </html>
