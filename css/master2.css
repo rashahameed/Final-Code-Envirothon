@@ -1,194 +1,229 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	padding: 0;
-	margin: 0;
-  background: #fafbfc;
-	color: #000;
-	font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #fafbfc;
+    color: #000;
+    font-family: "Raleway", sans-serif;
 }
-a{
-	text-decoration: none;
-}
-#wrapper {
-	width: 430px;
-	margin: 25px auto;
-	padding: 64px;
-	background-size: cover;
-  border-radius: 40px;
-	position: relative;
-	z-index: 1;
 
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 430px;
+    margin: 25px auto;
+    padding: 64px;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3.3em;
 }
 
 #wrapper:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #fafbfc;
-	z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fafbfc;
+    z-index: -1;
 }
 
 #table {
-	margin-bottom: 6em;
+    margin-bottom: 6em;
 }
 
 #table a {
-	text-transform: uppercase;
-	margin-right: 40px;
-	padding: 11px 4px;
-	color: #bbb;
-	cursor: pointer
+    text-transform: uppercase;
+    margin-right: 40px;
+    padding: 11px 4px;
+    color: #bbb;
+    cursor: pointer
 }
 
 #table a.active {
-	border-bottom: 1.5px solid #262626;
-	color: #262626;
+    border-bottom: 1.5px solid #262626;
+    color: #262626;
+}
+
+h1 {
+    margin-right: 40px;
+    padding: 11px 4px;
+    color: #000;
+    margin-bottom: 2em;
 }
 
 label {
-	display: block
+    display: block
 }
 
 form {
-	margin-bottom: 3.3em;
+    margin-bottom: 3.3em;
 }
 
 .form-group {
-	position: relative;
-	margin-bottom: 16px;
+    position: relative;
+    margin-bottom: 16px;
+    color: #000
 }
 
 .form-group label {
-	display: block;
-	margin-bottom: 6px;
-	font-size: 14px;
-	margin-left: 14px;
-	color: #262626;
-	font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    margin-left: 14px;
+    color: #262626;
+    font-weight: bold;
 }
 
 input {
-	width: 100%;
-	background: rgba(0, 0, 0, 0.42);
-	outline: none;
-	padding: 10px 14px;
-	color: #fff;
-	border: none;
-	border-radius: 36px;
-	font-family: "Raleway", sans-serif;
-	font-size: 16px;
-	transition: background 0.5s ease-in-out;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.42);
+    outline: none;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 36px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    transition: background 0.5s ease-in-out;
 }
+
 span#showpwd {
     position: absolute;
     top: 32px;
     right: 16px;
     cursor: pointer;
 }
+
 input:focus {
-	background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 input[type="submit"] {
-	background: #1061EE;
-	margin-top: 14px;
-	cursor: pointer;
+    background: #1061EE;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+button {
+    background: #1061EE;
+    margin-top: 14px;
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    outline: none;
+    padding: 10px 14px;
+    color: #000;
+    border: none;
+    border-radius: 36px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #checkbox {
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px
 }
 
 #checkbox input+.text:before {
-	content: "\f096";
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin-right: 6px;
-	width: 1em;
+    content: "\f096";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 6px;
+    width: 1em;
 }
 
 #checkbox input:checked+.text:before {
-	content: "\f14a";
-	color: #1061ee;
-	animation: scalecheck 0.1s
+    content: "\f14a";
+    color: #1061ee;
+    animation: scalecheck 0.1s
 }
 
 #checkbox input {
-	display: none;
+    display: none;
 }
 
 @-webkit-keyframes scalecheck {
-	0% {
-		transform: scale(0);
-	}
-	90% {
-		transform: scale(1.4);
-	}
-	100% {
-		transform: scale(1);
-	}
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .hr {
-	height: 1.4px;
-	background: rgba(128, 128, 128, 0.51);
-	border-radius: 17px;
-	margin-bottom: 33px;
+    height: 1.4px;
+    background: rgba(128, 128, 128, 0.51);
+    border-radius: 17px;
+    margin-bottom: 33px;
 }
 
 #froget-pass {
-	text-align: center;
-	color: #bbb;
-	margin: 0;
-	display: block;
+    text-align: center;
+    color: #bbb;
+    margin: 0;
+    display: block;
 }
 
 @media screen and (max-width :490px) {
-	body {
-		display: table;
-		width: 100%;
-	}
-	#wrapper {
-		width: auto;
-		height: 100vh;
-		margin: 0;
-		display: table-cell;
-		vertical-align: middle;
-	}
+    body {
+        display: table;
+        width: 100%;
+    }
+    #wrapper {
+        width: auto;
+        height: 100vh;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
 @media screen and (max-width :490px) {
-	#wrapper {
-		padding: 28px;
-	}
+    #wrapper {
+        padding: 28px;
+    }
 }
-.show-hide{
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+
+.show-hide {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.show-hide i{
-  font-size: 19px;
-  color: #48DBFB;
-  cursor: pointer;
-  display: none;
+
+.show-hide i {
+    font-size: 19px;
+    color: #48DBFB;
+    cursor: pointer;
+    display: none;
 }
-.show-hide i.hide:before{
-  content: '\f070';
+
+.show-hide i.hide:before {
+    content: '\f070';
 }
-input:valid ~ .show-hide i{
-  display: block;
+
+input:valid~.show-hide i {
+    display: block;
 }
