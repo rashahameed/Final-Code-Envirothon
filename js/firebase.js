@@ -26,7 +26,6 @@ function signOut() {
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         var email = user.email;
-        alert("Active user " + email);
     } else {
         alert("No active user");
         window.location = 'signup.html';
