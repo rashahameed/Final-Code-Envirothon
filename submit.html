@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/master2.css">
+        <meta charset="UTF-8">
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to fit=no">
+          <meta charset="utf-8">
+          <title></title>
+          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+          <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+      <script src="js/firebase.js"></script>
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+   <div class="col-md-6 offset-md-3 mt-5">
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4; background-color: black; color: white;">
+        <div class="box1"><a href="dashboard.html" style="color:white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Dashboard</a></div>
+        <div class="box1"><a href="friend.html" style="color:white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Friends</a></div>
+        <div class="box1"><a href="localmap.html" style="color:white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Local Map</a></div>
+        <div class="box1"><a href="map.html" style="color:white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Global Map</a></div>
+        <div class="box1"><a href="posts.html" style="color:white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Posts</a></div>
+        <div class="box1"><a href="rank.html" style="color:white; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Leaderboard</a></div>
+        <div class="box1"><button class="topnav" onclick="signOut()"><strong>Sign Out</strong></button></div>
+       <span class="stretch"></span>
+      </div>
+     <br>
+     <div style="max-width: 50%; margin-left: auto; margin-right: auto;">
+     <h1>Post your video</h1>
+     
+       <div class="form-group">
+         <label for="name">Your Name</label>
+         <input type="text" name="fullname" class="form-control" id="person" required="required">
+       </div>
+       <div class="form-group">
+         <label for="plant" required="required">Select plant name</label>
+         <input type="text" name="plant" class="form-control" id="plant">
+       </div>
+       <hr>
+       <div class="form-group mt-3">
+         <label class="mr-2">Upload your video:</label>
+         <input id="submission" type="file" name="file" accept="video/*">
+       </div>
+       <hr>
+       <div class="form-group">
+       <button onclick="upload()" type="submit" class="btn btn-primary" style="margin-right: auto; margin-left: auto;">Submit</button>
+    </div>
+     
+ </div> </div>
+</body>
+</html>
