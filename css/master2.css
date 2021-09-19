@@ -7,7 +7,7 @@ body {
     margin: 0;
     background: #fafbfc;
     color: #000;
-    font-family: "Raleway", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -60,6 +60,7 @@ h1 {
     margin-bottom: 2em;
 }
 
+
 label {
     display: block
 }
@@ -71,28 +72,27 @@ form {
 .form-group {
     position: relative;
     margin-bottom: 16px;
-    color: #000
+    color: #000;
+    font-size: 16px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 6px;
-    font-size: 16px;
     margin-left: 14px;
     color: #262626;
-    font-weight: bold;
 }
 
 input {
     width: 100%;
-    background: rgba(0, 0, 0, 0.42);
+    background: rgba(54, 53, 53, 0.42);
     outline: none;
     padding: 10px 14px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 36px;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     transition: background 0.5s ease-in-out;
 }
 
@@ -104,11 +104,11 @@ span#showpwd {
 }
 
 input:focus {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(65, 64, 64, 0.6);
 }
 
 input[type="submit"] {
-    background: #1061EE;
+    background: #043994;
     margin-top: 14px;
     cursor: pointer;
 }
@@ -124,8 +124,7 @@ button {
     color: #000;
     border: none;
     border-radius: 36px;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     transition: background 0.5s ease-in-out;
     margin-left: auto;
