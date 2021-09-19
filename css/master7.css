@@ -20,6 +20,37 @@ body {
   position: relative;
 }
 
+.box1 {
+  width: 13.5%;
+  height: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  background-color: #000;
+  zoom: 1;
+  color:white;
+  
+}
+
+button {
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+strong {
+  font-size: 14px;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
 
 .friends, .denied {
   position: absolute;
