@@ -8,6 +8,7 @@ The venture tells you the zones which need trees to be planted and urges individ
 
 Through the satellite information, we can perceive which zones may should be greener, and we will urge the closest individuals to plant on those territories. Additionally, satellite information can be utilized in numerous different models like to discover copied backwoods territories, zones where the waterways have dried. A forecast model can likewise be utilized on picture preparing to foresee the water bodies like streams which are going to dry in next barely any years. Along these lines, we can urge individuals to plant an ever-increasing number of trees on those areas to spare those water bodies.
 <br>
+<br>
  
 ## Model Features 
 
@@ -17,8 +18,9 @@ Through the satellite information, we can perceive which zones may should be gre
 ● Post Section (News Feeds and posts uploaded by the user) <br>
 ● User Dashboard <br>
 ● Local Map (To find nearby planting zones) <br>
-● Leaderboard Section (Ranking based on number of trees planted)
+● Leaderboard Section (Ranking based on number of trees planted)<br>
 ● Contest Zone (Compete with your friends)<br>
+<br>
 
 ## Model Description
 
