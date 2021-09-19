@@ -13,7 +13,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
-
+const storage = firebase.storage();
+const storageRef = storage.ref();
 
 //signOut
 
@@ -31,3 +32,15 @@ firebase.auth().onAuthStateChanged((user) => {
         window.location = 'signup.html';
     }
 })
+
+function upload() {
+  var file = document.getElementById("submission").value;
+var person = document.getElementById("person").value;
+var plant = document.getElementById("plant").value;
+
+
+const videosRef = storageRef.child("Videos/" + person + "/" + plant);
+videosRef.put(file).then((snapshot) => {
+  alert('Uploaded your file!');
+});
+}
