@@ -16,7 +16,35 @@ html, body {
   font-size: 100%;
   background: #e2e5eb;
 }
+.box1 {
+  width: 13.5%;
+  height: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  background-color: #000;
+  zoom: 1;
+  color:white;
+}
 
+button {
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+strong {
+  font-size: 14px;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
 .container {
   padding: 0.5em 1em 1em;
   max-width: calc(1400px + 1em);
